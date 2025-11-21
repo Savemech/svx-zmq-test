@@ -16,7 +16,7 @@ fn format_time(duration: Duration) -> String {
 
     format!(
         "{:04}-{:02}-{:02}T{:02}:{:02}:{:02}.{:06}Z",
-        year, month, day, hour, min, sec, micros
+          year, month, day, hour, min, sec, millis
     )
 }
 
@@ -136,4 +136,5 @@ fn main() -> Result<(), Box<dyn std::error::Error>> {
             responder.send(&response, 0)?;
         }
     }
+
 }
